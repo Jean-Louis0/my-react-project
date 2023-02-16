@@ -1,9 +1,11 @@
 import React from 'react';
 import { createSearchParams } from 'react-router-dom';
+import menu from '../menu';
 import image from './image.jpg';
 function Accueil(props) {
     return (
         <div>
+            <menu/>
             <img src= {image} alt = "Image" />
             <p>
             Here’s to the crazy ones, the misfits, the rebels, 

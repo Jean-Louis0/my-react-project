@@ -1,12 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-import image from './image.jpg';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Accueil from './pages/Accueil';
+
 function App() {
   return (
-    <div className="App">
-      <h1>Bienvenue</h1>
-      <img src={image} alt="image" />
-    </div>
+    <BrowserRouter>
+      <routes>
+        <Route path='/' element={<Accueil/>} />
+      </routes>
+    </BrowserRouter>
+
   );
 }
 
